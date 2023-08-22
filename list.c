@@ -28,7 +28,10 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList() {
+List * createList(){
+  
+
+  
      return NULL;
 }
 
@@ -69,7 +72,7 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void * popCurrent(List * list){
     return NULL;
 }
 
