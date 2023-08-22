@@ -13,3 +13,9 @@ list.c:32:47: error: ‘structList’ undeclared (first use in this function)
 list.c:32:47: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7c76590
+Tue 22 Aug 2023 10:36:08 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+080773f
