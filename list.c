@@ -35,7 +35,7 @@ List * createList(){
         exit(EXIT_FAILURE);
     }
     lista->head = NULL;
-    return newList;
+    return lista;
      //return NULL;
 }
 
