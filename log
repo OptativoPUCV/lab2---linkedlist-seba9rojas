@@ -2,3 +2,14 @@ Tue 22 Aug 2023 10:30:20 PM UTC:
  tests:  0|6
 total_score: 0/70
 d93413d
+Tue 22 Aug 2023 10:35:41 PM UTC: 
+ list.c | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:32:47: error: ‘structList’ undeclared (first use in this function)
+   32 |   List* newList = (struct List*)malloc(sizeof(structList));
+      |                                               ^~~~~~~~~~
+list.c:32:47: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7c76590

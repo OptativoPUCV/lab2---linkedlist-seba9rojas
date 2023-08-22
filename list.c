@@ -29,10 +29,14 @@ Node * createNode(void * data) {
 }
 
 List * createList(){
-  
-
-  
-     return NULL;
+  List* newList = (struct List*)malloc(sizeof(structList));
+  if (newList == NULL) {
+        //perror("Error al asignar memoria para la lista");
+        exit(EXIT_FAILURE);
+    }
+    newList->head = NULL;
+    return newList;
+     //return NULL;
 }
 
 void * firstList(List * list) {
