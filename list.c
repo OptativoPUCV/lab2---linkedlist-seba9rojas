@@ -31,7 +31,7 @@ Node * createNode(void * data) {
 List * createList(){
   List* lista = (struct List*)malloc(sizeof(struct List));
   if (lista == NULL){
-        perror("Error al asignar memoria para la lista");
+        //perror("Error al asignar memoria para la lista");
         exit(EXIT_FAILURE);
     }
     lista->head = NULL;
