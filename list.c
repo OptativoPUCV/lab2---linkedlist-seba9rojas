@@ -47,7 +47,7 @@ void* firstList(List * list){
 }
 
 void* nextList(List * list){
-    if(list->current!=NULL && list->current->next!=NULL){
+    if(list->current!=NULL){
       return list->current->next;
     }
   
