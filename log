@@ -80,3 +80,17 @@ list.c:84:13: error: expected ‘;’ before ‘popFront’
       |       ~~~~~~~~
 Compilation failed
 7e71ad9
+Thu 24 Aug 2023 02:05:15 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘cleanList’:
+list.c:84:7: error: too few arguments to function ‘free’
+   84 |       free();
+      |       ^~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:565:13: note: declared here
+  565 | extern void free (void *__ptr) __THROW;
+      |             ^~~~
+Compilation failed
+e5d461d
