@@ -59,3 +59,24 @@ Tue 22 Aug 2023 10:39:56 PM UTC:
  tests:  1|5
 total_score: 10/70
 2f3b568
+Thu 24 Aug 2023 02:05:10 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘cleanList’:
+list.c:84:7: error: too few arguments to function ‘free’
+   84 |       free()
+      |       ^~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:565:13: note: declared here
+  565 | extern void free (void *__ptr) __THROW;
+      |             ^~~~
+In file included from test.c:5:
+list.c:84:13: error: expected ‘;’ before ‘popFront’
+   84 |       free()
+      |             ^
+      |             ;
+   85 |       popFront(list);
+      |       ~~~~~~~~
+Compilation failed
+7e71ad9

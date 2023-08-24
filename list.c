@@ -32,28 +32,29 @@ List* createList(){
   List* lista = (struct List*)malloc(sizeof(struct List));
   if (lista == NULL){
         exit(EXIT_FAILURE);
-    }
-    lista->head = NULL;
-    return lista;
+  }
+  lista->head = NULL;
+  return lista;
 }
 
-void * firstList(List * list) {
+void* firstList(List * list){
     return NULL;
 }
 
-void * nextList(List * list) {
+void* nextList(List * list){
     return NULL;
 }
 
-void * lastList(List * list) {
+void* lastList(List * list) {
     return NULL;
 }
 
-void * prevList(List * list) {
+void* prevList(List * list) {
     return NULL;
 }
 
-void pushFront(List * list, void * data) {
+void pushFront(List * list, void * data){
+  
 }
 
 void pushBack(List * list, void * data) {
@@ -64,22 +65,23 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data) {
 }
 
-void * popFront(List * list) {
+void* popFront(List * list) {
     list->current = list->head;
     return popCurrent(list);
 }
 
-void * popBack(List * list) {
+void* popBack(List * list) {
     list->current = list->tail;
     return popCurrent(list);
 }
 
-void * popCurrent(List * list){
+void* popCurrent(List* list){
     return NULL;
 }
 
-void cleanList(List * list) {
+void cleanList(List* list) {
     while (list->head != NULL) {
-        popFront(list);
+      free()
+      popFront(list);
     }
 }
