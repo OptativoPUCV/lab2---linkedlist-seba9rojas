@@ -440,3 +440,14 @@ list.c:80:7: error: ‘new’ undeclared (first use in this function)
       |       ^~~
 Compilation failed
 9e7cd16
+Thu 24 Aug 2023 03:21:26 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:74:30: error: ‘newData’ undeclared (first use in this function)
+   74 |     Node* newNode=createNode(newData);
+      |                              ^~~~~~~
+list.c:74:30: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+66ac251
