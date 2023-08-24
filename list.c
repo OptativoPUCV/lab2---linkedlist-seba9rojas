@@ -47,10 +47,11 @@ void* firstList(List * list){
 }
 
 void* nextList(List * list){
-  if(list->head!=NULL){
-    return list->head->next;
-  }
-  return NULL;
+  if (list->head != NULL && list->head->next != NULL) {
+        return (void*)(list->head->next);  // Retorna el puntero al siguiente nodo
+    } else {
+        return NULL;  // Si el primer nodo o el siguiente nodo es NULL, retorna NULL
+    }
       
 }
 
