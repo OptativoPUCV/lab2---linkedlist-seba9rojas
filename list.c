@@ -79,9 +79,9 @@ void* popCurrent(List* list){
     return NULL;
 }
 
-void cleanList(List* list) {
-    while (list->head != NULL) {
-      free();
+void cleanList(List* list){
+    
+    while (list->head != NULL){
       popFront(list);
     }
 }
