@@ -71,17 +71,19 @@ void* prevList(List * list) {
 }
 
 void pushFront(List * list, void * data){
-    Node* newNode=createNode(NULL);
-    if(list->head==NULL){
-      list->head=newNode;
-      list->head=newNode;
+    Node* newNode = createNode(NULL); // Crear un nuevo nodo sin contenido
+
+    if (list->head == NULL) {
+        // Si la lista está vacía, el nuevo nodo se convierte en el primer y último nodo
+        list->head = newNode;
+        list->tail = newNode;
+    } else {
+        // Si la lista no está vacía, el nuevo nodo se convierte en el primer nodo
+        newNode->next = list->head;
+        list->head->prev = newNode;
+        list->head = newNode;
     }
-    else{
-      newNode->next=list->head;
-      list->head->prev = newNode;
-      list->head = newNode;
-      
-    }
+    
     list->current = newNode;
   
 }
