@@ -568,3 +568,13 @@ list.c:104:26: error: ‘Node’ has no member named ‘current’
       |                          ^~
 Compilation failed
 446756a
+Thu 24 Aug 2023 08:30:40 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:104:12: error: ‘Node’ has no member named ‘current’
+  104 |     newNode->current=list->current;
+      |            ^~
+Compilation failed
+eb7a26a
