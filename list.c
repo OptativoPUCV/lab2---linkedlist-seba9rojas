@@ -38,18 +38,23 @@ List* createList(){
 }
 
 void* firstList(List * list){
-  
-  if(list->head!=NULL){
-    return list->head->data; 
-  }
-  else
-  {
-    return NULL;
-  }
+    if(list->head!=NULL){
+      return list->head->data; 
+    }
+    else{
+      return NULL;
+    }
 }
 
 void* nextList(List * list){
-    return NULL;
+    current = list->head;
+    if(current!=NULL){
+      return current;
+    }
+    else{
+      return NULL;
+      
+    }
 }
 
 void* lastList(List * list) {

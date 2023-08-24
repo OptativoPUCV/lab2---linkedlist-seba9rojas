@@ -124,3 +124,19 @@ Thu 24 Aug 2023 02:28:38 AM UTC:
  tests:  2|5
 total_score: 15/70
 f91bdf8
+Thu 24 Aug 2023 02:31:30 AM UTC: 
+ list.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:50:5: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   50 |     current = list->head;
+      |     ^~~~~~~
+      |     popCurrent
+list.c:50:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c:58:1: error: control reaches end of non-void function [-Werror=return-type]
+   58 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+514b9f4
