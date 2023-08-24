@@ -42,7 +42,8 @@ void* firstList(List * list){
   if(list->head!=NULL){
     return list->head; 
   }
-  else{
+  else
+  {
     return NULL;
   }
 }
