@@ -82,7 +82,7 @@ void pushFront(List * list, void * data){
   }
 
   list->head=newNode;
-  list->tail=newNode
+  list->tail=newNode;
     
 }
 
