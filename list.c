@@ -73,19 +73,16 @@ void* prevList(List * list) {
 void pushFront(List * list, void * data){
     Node* newNode = createNode(NULL); // Crear un nuevo nodo sin contenido
 
-    if (list->head == NULL) {
-        // Si la lista está vacía, el nuevo nodo se convierte en el primer y último nodo
-        list->head = newNode;
-        list->tail = newNode;
+    newNode->next = list->head; // Establecer el siguiente del nuevo nodo como el actual primer nodo
+
+    if (list->head != NULL) {
+        list->head->prev = newNode; // Si la lista no está vacía, actualizar el previo del primer nodo
     } else {
-        // Si la lista no está vacía, el nuevo nodo se convierte en el primer nodo
-        newNode->next = list->head;
-        list->head->prev = newNode;
-        list->head = newNode;
+        list->tail = newNode; // Si la lista está vacía, el nuevo nodo también será el último nodo
     }
-    
+
+    list->head = newNode; // Establecer el nuevo nodo como el primer nodo
     list->current = newNode;
-  
 }
 
 void pushBack(List * list, void * data) {
