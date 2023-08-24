@@ -38,9 +38,9 @@ List* createList(){
 }
 
 void* firstList(List * list){
-  struct Node* first = list->head;
-  if(first!=NULL){
-    return first;
+  
+  if(list->head!=NULL){
+    return list->head; 
   }
   else{
     return NULL;
