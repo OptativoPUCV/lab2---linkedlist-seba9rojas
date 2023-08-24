@@ -234,3 +234,14 @@ Thu 24 Aug 2023 02:50:39 AM UTC:
  tests:  2|5
 total_score: 15/70
 5613fde
+Thu 24 Aug 2023 02:51:16 AM UTC: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:50:13: error: ‘head’ undeclared (first use in this function)
+   50 |     if(list>head!=NULL){
+      |             ^~~~
+list.c:50:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ab7934e
