@@ -397,3 +397,14 @@ list.c:76:18: error: ‘newTail’ undeclared (first use in this function)
       |                  ^~~~~~~
 Compilation failed
 16a4909
+Thu 24 Aug 2023 03:19:41 AM UTC: 
+ list.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:75:18: error: ‘new’ undeclared (first use in this function)
+   75 |       list->head=new;
+      |                  ^~~
+list.c:75:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+bd65b42
