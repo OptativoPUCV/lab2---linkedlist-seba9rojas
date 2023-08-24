@@ -451,3 +451,9 @@ list.c:74:30: error: ‘newData’ undeclared (first use in this function)
 list.c:74:30: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 66ac251
+Thu 24 Aug 2023 03:22:17 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+79921fa
