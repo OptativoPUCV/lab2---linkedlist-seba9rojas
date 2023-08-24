@@ -49,7 +49,7 @@ void* firstList(List * list){
 void* nextList(List * list){
     struct Node* current = list->head;
     if(current!=NULL){
-      return current;
+      return current->next;
     }
     else{
       return NULL;
