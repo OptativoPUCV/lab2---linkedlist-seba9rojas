@@ -274,3 +274,9 @@ list.c:50:8: error: ‘current’ undeclared (first use in this function); did y
 list.c:50:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b21958f
+Thu 24 Aug 2023 02:52:39 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 15/70
+376d702
