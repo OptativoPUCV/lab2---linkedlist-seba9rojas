@@ -139,8 +139,6 @@ void* popCurrent(List* list){
 
     return NULL; // Podrías devolver el elemento eliminado si lo deseas
 }
-    return NULL;
-}
 //=============================================================
 void cleanList(List* list){
     while (list->head != NULL){
