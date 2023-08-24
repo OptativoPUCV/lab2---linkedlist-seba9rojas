@@ -408,3 +408,21 @@ list.c:75:18: error: ‘new’ undeclared (first use in this function)
 list.c:75:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 bd65b42
+Thu 24 Aug 2023 03:21:00 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:74:30: error: ‘newData’ undeclared (first use in this function)
+   74 |     Node* newNode=createNode(newData);
+      |                              ^~~~~~~
+list.c:74:30: note: each undeclared identifier is reported only once for each function it appears in
+list.c:76:18: error: ‘new’ undeclared (first use in this function)
+   76 |       list->head=new;
+      |                  ^~~
+list.c:74:11: error: unused variable ‘newNode’ [-Werror=unused-variable]
+   74 |     Node* newNode=createNode(newData);
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bd8de15
