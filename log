@@ -245,3 +245,14 @@ list.c:50:13: error: ‘head’ undeclared (first use in this function)
 list.c:50:13: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 ab7934e
+Thu 24 Aug 2023 02:51:22 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:50:13: error: ‘head’ undeclared (first use in this function)
+   50 |     if(list>head!=NULL){
+      |             ^~~~
+list.c:50:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e470799
