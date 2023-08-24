@@ -38,7 +38,13 @@ List* createList(){
 }
 
 void* firstList(List * list){
+  struct Node* first = list->head;
+  if(first!=NULL){
+    return first;
+  }
+  else{
     return NULL;
+  }
 }
 
 void* nextList(List * list){
@@ -76,11 +82,12 @@ void* popBack(List * list) {
 }
 
 void* popCurrent(List* list){
+    
     return NULL;
 }
 
+
 void cleanList(List* list){
-    
     while (list->head != NULL){
       popFront(list);
     }
