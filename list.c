@@ -116,29 +116,36 @@ void* popBack(List * list) {
 }
 //=============================================================
 void* popCurrent(List* list){
-  if (list == NULL || list->current == NULL) {
-        return NULL; // No hay nada que eliminar
+  if(list->current ==NULL){
+      return NULL;
     }
+    Node* currentNode =list->current;
+    void* data =currentNode->data;
 
-    Node* nodeToRemove = list->current;
-
-    if (nodeToRemove == list->head) {
-        list->head = nodeToRemove->next;
-    } else {
-        Node* prevNode = list->head;
-        while (prevNode != NULL && prevNode->next != nodeToRemove) {
-            prevNode = prevNode->next;
-        }
-        if (prevNode != NULL) {
-            prevNode->next = nodeToRemove->next;
-        }
+    if(currentNode->prev !=NULL){
+      currentNode->prev->next = currentNode->next;
+    } 
+    else{
+      list->head =currentNode->next;
     }
-
-    list->current = nodeToRemove->next;
-    free(nodeToRemove);
-
-    return NULL; // Podrías devolver el elemento eliminado si lo deseas
+  
+    if(currentNode->next !=NULL){
+      currentNode->next->prev = currentNode->prev;
+    } 
+    else{
+      list->tail =currentNode->prev;
+    }
+  
+    if(currentNode->prev ==NULL && currentNode->next ==NULL){
+      list->head =NULL;
+      list->tail =NULL;
+    }
+  
+    list->current =currentNode->next;
+    free(currentNode);
+    return data;
 }
+
 //=============================================================
 void cleanList(List* list){
     while (list->head != NULL){
