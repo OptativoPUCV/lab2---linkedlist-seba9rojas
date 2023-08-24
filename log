@@ -346,3 +346,16 @@ Thu 24 Aug 2023 03:00:19 AM UTC:
  tests:  5|4
 total_score: 25/70
 c1de710
+Thu 24 Aug 2023 03:01:00 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:58:21: error: ‘Node’ has no member named ‘tail’
+   58 |     if(list->current->tail!=NULL){
+      |                     ^~
+list.c:59:27: error: ‘Node’ has no member named ‘tail’
+   59 |       return list->current->tail->data;
+      |                           ^~
+Compilation failed
+736294b
