@@ -51,12 +51,13 @@ void* nextList(List * list){
       list->current=list->current->next;
       return list->current->data;
     }
-  
-    return NULL;
-      
+    return NULL;     
 }
 
 void* lastList(List * list) {
+    if(list->tail!=NULL){
+      return list->tail->data;
+    }
     return NULL;
 }
 
