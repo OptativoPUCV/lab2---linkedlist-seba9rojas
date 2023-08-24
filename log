@@ -310,3 +310,15 @@ Thu 24 Aug 2023 02:55:58 AM UTC:
  tests:  2|5
 total_score: 15/70
 9702cdc
+Thu 24 Aug 2023 02:57:19 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:51:33: error: expected ‘;’ before ‘)’ token
+   51 |       return list->current->next);
+      |                                 ^
+      |                                 ;
+list.c:51:33: error: expected statement before ‘)’ token
+Compilation failed
+a700848
