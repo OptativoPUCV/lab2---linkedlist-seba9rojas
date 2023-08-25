@@ -142,7 +142,6 @@ void* popCurrent(List* list){
     }
   
     list->current =currentNode->next;
-    //free(currentNode);
     return data;
 }
 
